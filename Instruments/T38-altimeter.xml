@@ -215,6 +215,7 @@ properties' values.
      <type>number-value</type>
      <property>/instrumentation/altimeter/indicated-altitude-ft</property>
      <scale>0.001</scale>
+     <truncate>true</truncate>
      <format>%4.0f</format>
     </chunk>
    </chunks>
@@ -225,7 +226,7 @@ properties' values.
     </transformation>
     <transformation>
      <type>y-shift</type>
-     <offset>-10</offset>
+     <offset>-8</offset>
     </transformation>
    </transformations>
   </layer>
