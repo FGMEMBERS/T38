@@ -49,6 +49,15 @@ David Culp,  davidculp2@attbi.com
   </fuel>
  </consumables>
 
+ <engines>
+  <engine n="0">
+    <running>true</running>
+  </engine>
+  <engine n="1">
+    <running>true</running>
+  </engine>
+ </engines>
+
 <input>
  <keyboard>
 
