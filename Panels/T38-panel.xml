@@ -184,6 +184,16 @@ _______________________________________________________________________
    <w>51</w>
    <h>51</h>
   </instrument>
+
+  <instrument include="../Instruments/refuel.xml">
+   <name>Refuel Contact Light</name>
+   <x>816</x>
+   <y>48</y>
+   <w>12</w>
+   <h>12</h>
+  </instrument>
+
+
 <!--
   <instrument include="../Instruments/aero.xml">
    <name>Aero data</name>
