@@ -83,7 +83,7 @@
       ZLOC         0.0
       RADIUS       1.0
       CAPACITY  1953.0
-      CONTENTS     0.0
+      CONTENTS  1900.0
     </AC_TANK>
     <AC_TANK TYPE="FUEL" NUMBER="1">  <!-- right/aft -->
       XLOC       370.0
@@ -91,7 +91,7 @@
       ZLOC         0.0
       RADIUS       1.0
       CAPACITY  2029.0
-      CONTENTS     0.0
+      CONTENTS  2000.0
     </AC_TANK>	
   </PROPULSION>
 
@@ -158,11 +158,18 @@
        INPUT        aero/beta-rad
        GAIN         -7.00
      </COMPONENT>
-     <COMPONENT NAME="Rudder Control" TYPE="SUMMER">
+     <COMPONENT NAME="Rudder Sum" TYPE="SUMMER">
        INPUT        fcs/yaw-trim-sum
        INPUT        fcs/yaw-damper-rate
-       INPUT        fcs/yaw-damper-beta 
-       OUTPUT       fcs/rudder-pos-rad
+       INPUT        fcs/yaw-damper-beta
+       CLIPTO       -1 1
+     </COMPONENT>
+     <COMPONENT NAME="Rudder Control" TYPE="AEROSURFACE_SCALE">
+       INPUT         fcs/rudder-sum
+       MIN           -25
+       MAX           25
+       GAIN          0.01745
+       OUTPUT        fcs/rudder-pos-rad
      </COMPONENT>
      <COMPONENT NAME="Flaps Control" TYPE="KINEMAT">
        INPUT        fcs/flap-cmd-norm
