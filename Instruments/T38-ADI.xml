@@ -144,7 +144,7 @@ properties' values.
    <name>Glideslope Needle</name>
    <condition>
     <equals>
-      <property>/radios/nav/in-range</property>
+      <property>/instrumentation/nav/in-range</property>
       <value>true</value>
     </equals>
    </condition>
@@ -164,7 +164,7 @@ properties' values.
     </transformation>
     <transformation>
      <type>y-shift</type>
-     <property>/radios/nav/gs-needle-deflection[0]</property>
+     <property>/instrumentation/nav/gs-needle-deflection[0]</property>
      <min>-10</min>
      <max>10</max>
      <scale>4.0</scale>

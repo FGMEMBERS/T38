@@ -48,7 +48,7 @@ properties' values.
    <transformations>
     <transformation>
      <type>rotation</type>
-     <property>/radios/nav/radials/selected-deg[0]</property>
+     <property>/instrumentation/nav/radials/selected-deg[0]</property>
      <scale>1.0</scale>
     </transformation>
     <transformation>
@@ -63,7 +63,7 @@ properties' values.
    <name>Localizer Bar</name>
    <condition>
     <equals>
-      <property>/radios/nav/in-range</property>
+      <property>/instrumentation/nav/in-range</property>
       <value>true</value>
     </equals>
    </condition>
@@ -79,7 +79,7 @@ properties' values.
    <transformations>
     <transformation>
      <type>rotation</type>
-     <property>/radios/nav/radials/selected-deg[0]</property>
+     <property>/instrumentation/nav/radials/selected-deg[0]</property>
      <scale>1.0</scale>
     </transformation>
     <transformation>
@@ -89,7 +89,7 @@ properties' values.
     </transformation>
     <transformation>
      <type>x-shift</type>
-     <property>/radios/nav/heading-needle-deflection[0]</property>
+     <property>/instrumentation/nav/heading-needle-deflection[0]</property>
      <scale>4.0</scale>
     </transformation>
    </transformations>
@@ -206,7 +206,7 @@ properties' values.
     </transformation>
     <transformation>
      <type>rotation</type>
-     <property>/radios/nav/radials/selected-deg[0]</property>
+     <property>/instrumentation/nav/radials/selected-deg[0]</property>
      <scale>5.0</scale>
     </transformation>
    </transformations>
@@ -216,7 +216,7 @@ properties' values.
     <name>DME display</name>
     <condition>
      <equals>
-      <property>/radios/dme/in-range</property>
+      <property>/instrumentation/dme/in-range</property>
       <value>true</value>
      </equals>
     </condition>
@@ -231,7 +231,7 @@ properties' values.
     <chunks>
      <chunk>
       <type>number-value</type>
-      <property>/radios/dme/distance-nm[0]</property>
+      <property>/instrumentation/dme/distance-nm[0]</property>
       <format>%4.1f</format>
      </chunk>
     </chunks>
@@ -260,7 +260,7 @@ properties' values.
     <chunks>
      <chunk>
       <type>number-value</type>
-      <property>/radios/nav/radials/selected-deg[0]</property>
+      <property>/instrumentation/nav/radials/selected-deg[0]</property>
       <format>%5.0f</format>
      </chunk>
     </chunks>
@@ -290,7 +290,7 @@ properties' values.
    <transformations>
     <transformation>
      <type>rotation</type>
-     <property>/radios/nav[1]/radials/actual-deg[0]</property>
+     <property>/instrumentation/nav[1]/radials/actual-deg[0]</property>
      <scale>-1.0</scale>
     </transformation>
     <transformation>
@@ -353,7 +353,7 @@ properties' values.
    <h>26</h>
    <binding>
     <command>property-adjust</command>
-    <property>/radios/nav/radials/selected-deg[0]</property>
+    <property>/instrumentation/nav/radials/selected-deg[0]</property>
     <step>-1</step>
     <min>0</min>
     <max>359</max>
@@ -370,7 +370,7 @@ properties' values.
    <h>26</h>
    <binding>
     <command>property-adjust</command>
-    <property>/radios/nav/radials/selected-deg[0]</property>
+    <property>/instrumentation/nav/radials/selected-deg[0]</property>
     <step>1</step>
     <min>0</min>
     <max>359</max>
