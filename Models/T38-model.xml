@@ -10,9 +10,9 @@
  <animation>
   <type>blend</type>
   <object-name>left_flame</object-name>
-  <property>/engines/engine[0]/N1</property>
-  <offset>1.0</offset>
-  <factor>-0.01</factor>
+  <property>/engines/engine[0]/N2</property>
+  <offset>-50.0</offset>
+  <factor>0.01</factor>
   <min>0.0</min>
   <max>0.5</max>
  </animation>
@@ -20,9 +20,9 @@
  <animation>
   <type>blend</type>
   <object-name>right_flame</object-name>
-  <property>/engines/engine[0]/N1</property>
-  <offset>1.0</offset>
-  <factor>-0.01</factor>
+  <property>/engines/engine[1]/N2</property>
+  <offset>-50.0</offset>
+  <factor>0.01</factor>
   <min>0.0</min>
   <max>0.5</max>
  </animation>
@@ -198,8 +198,8 @@
  <animation>
   <type>rotate</type>
   <object-name>rightaileron</object-name>
-  <property>/surface-positions/left-aileron-pos-norm</property>
-  <factor>-15</factor>
+  <property>/surface-positions/right-aileron-pos-norm</property>
+  <factor>15</factor>
   <offset-deg>0</offset-deg>   
   <center>
    <x-m>2.69</x-m>
@@ -235,7 +235,7 @@
   <type>rotate</type>
   <object-name>leftflap</object-name>
   <property>/surface-positions/flap-pos-norm</property>
-  <factor>30</factor>
+  <factor>40</factor>
   <offset-deg>0</offset-deg>   
   <center>
    <x-m>2.59</x-m>
@@ -253,7 +253,7 @@
   <type>rotate</type>
   <object-name>rightflap</object-name>
   <property>/surface-positions/flap-pos-norm</property>
-  <factor>30</factor>
+  <factor>40</factor>
   <offset-deg>0</offset-deg>   
   <center>
    <x-m>2.59</x-m>
@@ -265,6 +265,28 @@
    <y>1</y>
    <z>0</z>
   </axis>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>lhcondensation cone</object-name>
+  <condition>
+   <greater-than>
+    <property>/orientation/alpha-deg</property>
+    <value>9.0</value>
+   </greater-than>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>rhcondensation cone</object-name>
+  <condition>
+   <greater-than>
+    <property>/orientation/alpha-deg</property>
+    <value>9.0</value>
+   </greater-than>
+  </condition>
  </animation>
 
 </PropertyList>

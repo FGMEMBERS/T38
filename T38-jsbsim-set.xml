@@ -49,4 +49,32 @@ David Culp,  davidculp2@attbi.com
   </fuel>
  </consumables>
 
+<input>
+ <keyboard>
+
+ <key n="80">
+  <name>P</name>
+  <desc>Fuel Cutoff Switch or Lever.</desc>
+
+  <binding>
+   <condition>
+    <property>/sim/input/selected/engine[0]</property>
+   </condition>
+   <command>property-toggle</command>
+   <property>/controls/engines/engine[0]/cutoff</property>
+  </binding>
+
+  <binding>
+   <condition>
+    <property>/sim/input/selected/engine[1]</property>
+   </condition>
+   <command>property-toggle</command>
+   <property>/controls/engines/engine[1]/cutoff</property>
+  </binding>
+
+ </key>
+
+ </keyboard>
+</input>
+
 </PropertyList>
