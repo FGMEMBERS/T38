@@ -14,6 +14,10 @@ David Culp,  davidculp2@comcast.net
  
   <flight-model>jsb</flight-model>
   <aero>T38</aero>
+
+  <startup>
+   <splash-texture>Aircraft/T38/T38-splash.rgb</splash-texture>
+  </startup>
   
   <systems>
    <electrical>
