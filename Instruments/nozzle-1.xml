@@ -1,5 +1,5 @@
 <PropertyList>
- <name>Nozzle aperature, normalized, Engine[1]</name>
+ <name>Engine Nozzle Position, Engine[1]</name>
  <w-base>128</w-base>
  <h-base>128</h-base>
  <layers>
@@ -18,7 +18,7 @@
   </layer>
 
   <layer>
-   <name>needle</name>
+   <name>big needle</name>
    <w>6</w>
    <h>48</h>
    <texture>
@@ -33,7 +33,6 @@
      <type>rotation</type>
      <property>engines/engine[1]/nozzle-pos-norm</property>
      <scale>270</scale>
-     <offset>24</offset>
     </transformation>
     <transformation>
      <type>y-shift</type>

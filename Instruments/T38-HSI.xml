@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 
 <!--
-T-38 HSI, David Culp, davidculp2@comcast.net, Feb 2003
+T-38 HSI, David Culp, davidculp2@attbi.com, Feb 2003
 Based on:
 Default gyro compass instrument.
 
@@ -109,7 +109,7 @@ properties' values.
    <transformations>
     <transformation>
      <type>rotation</type>
-     <property>/orientation/heading-magnetic-deg</property>
+     <property>/orientation/heading-magnetic-deg[0]</property>
      <scale>-1.0</scale>
     </transformation>
    </transformations>
@@ -290,13 +290,12 @@ properties' values.
    <transformations>
     <transformation>
      <type>rotation</type>
-     <property>/radios/nav[1]/radials/actual-deg</property>
-     <scale>1.0</scale>
-     <offset>180</offset>
+     <property>/radios/nav[1]/radials/actual-deg[0]</property>
+     <scale>-1.0</scale>
     </transformation>
     <transformation>
      <type>rotation</type>
-     <property>/orientation/heading-magnetic-deg</property>
+     <property>/orientation/heading-magnetic-deg[0]</property>
      <scale>-1.0</scale>
     </transformation>
     <transformation>

@@ -2,7 +2,7 @@
 <HEAD></HEAD>
 <BODY>
 <H3>Northrop T-38 Talon (JSBSim Model)</H3>
-Version 1.1, released 9 April 2003
+Version 1.2, released 16 October 2003
 <BR><BR>
 
 Configuration files for the FlightGear flight simulator 
@@ -16,12 +16,9 @@ http://www.gnu.org/licenses/gpl.html<A/>)<BR>
 <H3>Overview</H3>
 This is a first attempt at using a single archive to distribute all the
 files needed to model an aircraft in FlightGear. This archive should be
-extracted into directory $FGROOT/Aircraft/T38.  Some files will then need to be moved
-to other directories.  I've attempted to keep as many of the files in 
-directory $FGROOT/Aircraft/T38 as possible.  Ideally I'd like to keep <i>all</i>
-the files in one directory, but currently FlightGear requires some of them
-to be placed elsewhere. The contents of the archive, and the directory in 
-which each file or directory should reside, is listed below.
+extracted into directory $FGROOT/Aircraft/T38.  The engine file will then need to be moved
+to the $FGROOT/Engine directory.  Eventually FlightGear will be able to keep all the files for an
+airplane in one directory.
 <BR><BR>
 <HR>
 <H3>Contents</H3>
@@ -43,8 +40,13 @@ which each file or directory should reside, is listed below.
 </TR>
 <TR>
  <TD>T38-set.xml</TD>
+ <TD>An alias for the main configuration file</TD>
+ <TD>$FGROOT/Aircraft/T38</TD>
+</TR>
+<TR>
+ <TD>T38-jsbsim-set.xml</TD>
  <TD>The main configuration file</TD>
- <TD>$FGROOT/Aircraft</TD>
+ <TD>$FGROOT/Aircraft/T38</TD>
 </TR>
 <TR>
  <TD>T38-sound.xml</TD>
@@ -63,7 +65,7 @@ which each file or directory should reside, is listed below.
 </TR>
 <TR>
  <TD>t38</TD>
- <TD>A shell script wrapper for fgfs</TD>
+ <TD>A Unix/Linux shell script for fgfs</TD>
  <TD>~</TD>
 </TR>
 </TABLE>
@@ -78,7 +80,7 @@ which each file or directory should reside, is listed below.
 </TR>
 <TR>
  <TD>Sounds</TD>
- <TD>Contains .wav files and sound configuration for the T38</TD>
+ <TD>Contains .wav files and sound configuration for the T-38</TD>
  <TD>$FGROOT/Aircraft/T38</TD>
 </TR>
 <TR>
@@ -111,15 +113,15 @@ be features :)
 </TR>
 <TR>
  <TD>3D model has some bugs</TD>
- <TD>The model is a reskinned version of the Captain Slug AT-38.
-  There are gear parts extending upward through the wing.  The model
-  position has not been adjusted for FlightGear, so its wheels don't
-  contact the ground properly.  The gear and control surfaces don't move. 
+ <TD>The model is a reskinned version of the Captain Slug AT-38, with modifications by Innis Cunningham,
+  who converted the model from MDL to AC3D format and added animations and a cockpit.
+  There are missing gear doors. It could use gear sequencing.  Some texture missing from aft
+  fuselage. 
 </TD>
 </TR>
 <TR>
  <TD>The ADI falls apart above about +/-20 degrees of pitch</TD> 
- <TD>Texture cropping is not available yet</TD>
+ <TD>Texture cropping is not available yet for 2D cockpits</TD>
 </TR>
 <TR>
  <TD>The instrument panel is too small</TD>
@@ -147,8 +149,9 @@ be features :)
 <BR><HR>
 
 <H3>Flying the T-38</H3>
-Apply full throttle, afterburner is optional but recommended until 300 knots.  Rotate at 140 knots.  When airborne raise gear and
-flaps immediately.  Climb at a shallow angle, less than 1000 fpm, until reaching 300 knots, then
+Apply full throttle, afterburner is optional but recommended until 300 knots.  Rotate at 140 knots
+.  When airborne raise gear and flaps immediately.  Be carefull not to sink after initial flap
+ retraction. Climb at a shallow angle, less than 1000 fpm, until reaching 300 knots, then
 climb at 300 knots to 0.8 Mach.  To land fly downwind at 300 knots clean, on base slow to
 200 knots, extending gear and half flaps passing through 220 knots. On final
 extend full flaps and slow to 160 knots.<BR><BR>
@@ -158,7 +161,6 @@ fly a jet without lots of stab trimming.
 <BR><BR>
 Let me know if you'd like more features, and if you have recent time in the T-38
 let me know if this model flies reasonably close to the real airplane.
-It seems to lack power at altitude.
 <BR><BR>
 
 <H3>Notes</H3>
@@ -174,6 +176,6 @@ but close.<BR><BR>
  
 
 <BR><BR><HR>
-15 May 2003
+16 Oct 2003
 </BODY>
 </HTML>

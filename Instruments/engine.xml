@@ -89,7 +89,7 @@ properties' values.
     <chunks>
      <chunk>
       <type>number-value</type>
-      <property>/engines/engine[0]/n1</property>
+      <property>/engines/engine[0]/N1</property>
       <format>%6.1f</format>
      </chunk>
     </chunks>
@@ -118,7 +118,7 @@ properties' values.
     <chunks>
      <chunk>
       <type>number-value</type>
-      <property>/engines/engine[0]/n2</property>
+      <property>/engines/engine[0]/N2</property>
       <format>%6.1f</format>
      </chunk>
     </chunks>
@@ -176,9 +176,7 @@ properties' values.
     <chunks>
      <chunk>
       <type>number-value</type>
-      <property>/engines/engine[0]/egt_degf</property>
-      <offset>-17.77777777</offset>
-      <scale>0.55555556</scale>
+      <property>/engines/engine[0]/EGT_degC</property>
       <format>%6.0f</format>
      </chunk>
     </chunks>

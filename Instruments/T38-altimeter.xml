@@ -1,10 +1,47 @@
 <?xml version="1.0"?>
 
 <!--
-Mar 2003, David Culp, davidculp2@comcast.net
+Added thousands digital readout.
+Mar 2003, David Culp, davidculp2@attbi.com
 ___________________________________________________________________
 
-Altimeter instrument with digital thousands of feet.
+Improved altimeter instrument.
+Adds enhancements allowing for calibration.
+
+Jan, 2001 by Julian Foad <julianfoad@netscapeonline.co.uk>
+
+Julian sez: 
+ "provides a modified instrument definition with a knob
+ driving a subscale showing through a cut-out in the face....
+ 
+ I've put two lines in 'altimeter.xml', one to display millibars and
+ another, presently commented out, for inHg; USA pilots might want to
+ uncomment the inHg line instead.  At present, my subscale texture map
+ only has marks on it, not numbers, so it can stay the same.  Really
+ there should be two different versions of the altimeter, and a
+ USA-registered C172 would be fitted with an altimeter with inHg while
+ and a UK-registered C172 would be fitted with an altimeter with mb on
+ its subscale."
+   _________________________________________________________________
+
+Based on default by David Megginson, david@megginson.com.
+
+This is an instrument configuration file for the open-source flight
+simulator FlightGear (www.flightgear.org).  The file is an XML-encoded
+FlightGear property list defining the instrument's layers and actions.
+
+Each instrument is composed of layers stacked on top of each other.
+A layer may be a texture (with transparent parts to show the layers
+underneath), text, or a special layer that switches between two
+others (say, to turn an indicator light on or off).  Each layer can
+move independently in proportion to a property value, and text
+can be generated from property values as well: all of the layer's
+movements are defined as transformations.
+
+Actions are hotspots on the instrument that will respond to a mouse
+click.  Actions always modify the values of properties, either by
+adjusting them, toggling them, or swaping them with other
+properties' values.
 -->
 
 <PropertyList>
@@ -178,7 +215,6 @@ Altimeter instrument with digital thousands of feet.
      <type>number-value</type>
      <property>/instrumentation/altimeter/indicated-altitude-ft</property>
      <scale>0.001</scale>
-     <truncate>true</truncate>
      <format>%4.0f</format>
     </chunk>
    </chunks>
@@ -189,7 +225,7 @@ Altimeter instrument with digital thousands of feet.
     </transformation>
     <transformation>
      <type>y-shift</type>
-     <offset>-9</offset>
+     <offset>-10</offset>
     </transformation>
    </transformations>
   </layer>

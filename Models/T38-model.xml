@@ -35,6 +35,17 @@
   <value>0.5</value>
  </animation>
 
+ <animation>
+  <type>select</type>
+  <object-name>nosegear</object-name>
+  <condition>
+   <greater-than>
+    <property>/gear/gear[0]/position-norm</property>
+    <value>0</value>
+   </greater-than>
+  </condition>
+ </animation>
+
   <animation>
   <type>rotate</type>
   <object-name>nosegear</object-name>
@@ -71,6 +82,17 @@
   </axis>
  </animation>
 
+
+ <animation>
+  <type>select</type>
+  <object-name>rightgear</object-name>
+  <condition>
+   <greater-than>
+    <property>/gear/gear[1]/position-norm</property>
+    <value>0</value>
+   </greater-than>
+  </condition>
+ </animation>
 
   <animation>
   <type>rotate</type>
@@ -110,6 +132,17 @@
   </axis>
  </animation>
 
+
+ <animation>
+  <type>select</type>
+  <object-name>leftgear</object-name>
+  <condition>
+   <greater-than>
+    <property>/gear/gear[2]/position-norm</property>
+    <value>0</value>
+   </greater-than>
+  </condition>
+ </animation>
 
   <animation>
   <type>rotate</type>

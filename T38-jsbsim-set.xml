@@ -2,7 +2,7 @@
 <!--
 ************************************************************************
 T38 JSBSim config file
-David Culp,  davidculp2@attbi.com
+David Culp,  davidculp2@comcast.net
 ************************************************************************
 -->
 
@@ -36,18 +36,27 @@ David Culp,  davidculp2@attbi.com
    <path>Aircraft/T38/Models/T38-model.xml</path>
   </model>
 
+  <chase-distance-m>-21</chase-distance-m>
+
  </sim>
 
  <consumables>
   <fuel>
    <tank n="0">
-    <level-gal_us archive="y">280</level-gal_us>
+    <level-gal_us archive="y">290</level-gal_us>
    </tank>
    <tank n="1">
-    <level-gal_us archive="y">280</level-gal_us>
+    <level-gal_us archive="y">290</level-gal_us>
    </tank>
   </fuel>
  </consumables>
+
+
+ <controls>
+  <flight>
+   <flaps>0.5</flaps>
+  </flight>
+ </controls>
 
  <engines>
   <engine n="0">
@@ -61,8 +70,8 @@ David Culp,  davidculp2@attbi.com
 <input>
  <keyboard>
 
- <key n="80">
-  <name>P</name>
+ <key n="81">
+  <name>Shift-Q</name>
   <desc>Fuel Cutoff Switch or Lever.</desc>
 
   <binding>

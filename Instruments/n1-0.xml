@@ -1,23 +1,11 @@
 <!-- This gauge provides an approximation of N1 RPM based on throttle
-     position.  The idle N1 value is currently set to 30.0%, and the 
-     maximum N1 value is currently set to 100.0%.  You may adjust the
-     idle value by recalculating the offset and scale of the Big Needle
-     as indicated in the comments in that section below. To adjust the
-     maximum N1 value is a bit more complicated.  You need to first find
-     the dial angle in degrees which corresponds to the N1 value you need.
-     For example, 102% corresponds to about 271 degrees.  You then use
-     the value 271 to calculate the scale, instead of the default 265.
-
-     Note that a fractional value for idle or maximum N1 requires that
-     the offset and scale of the little needle be adjusted as well.
-
-     This gauge is named n1-0 to refer to the #1 engine (which is the
+     position. This gauge is named n1-0 to refer to the #1 engine (which is the
      zero-eth engine in FlightGear).  To create a gauge for the #2
      engine rename this file n1-1, then change the "name" below to 
      "Engine N1 RPM, Engine[1]", then change the property for BOTH
      needles below to "controls/throttle[1]".
 
-     David Culp, davidculp2@attbi.com, 16 Feb 2003
+     David Culp, davidculp2@comcast.net, 16 Feb 2003
      Original artwork by: ?
 -->
      

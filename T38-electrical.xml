@@ -207,9 +207,7 @@
   <connector>
     <input>Battery</input>
     <output>Battery Bus</output>
-    <switch>
-      <prop>/controls/switches/battery</prop>
-    </switch>
+    <switch>/controls/switches/battery</switch>
   </connector>
 
   <connector>
@@ -291,97 +289,73 @@
   <connector>
     <input>Battery Bus</input>
     <output>Start Switch 1</output>
-    <switch>
-      <prop>/controls/starter[0]</prop>
-    </switch>
+    <switch>/controls/starter[0]</switch>
   </connector>
 
   <connector>
     <input>Battery Bus</input>
     <output>Start Switch 2</output>
-    <switch>
-      <prop>/controls/starter[1]</prop>
-    </switch>
+    <switch>/controls/starter[1]</switch>
   </connector>
 
   <connector>
     <input>Main Bus 2</input>
     <output>Cockpit Lights</output>
-    <switch>
-      <prop>/controls/circuit-breakers/cabin-lights-pwr</prop>
-    </switch>
+    <switch>/controls/circuit-breakers/cabin-lights-pwr</switch>
   </connector>
 
   <connector>
     <input>Main Bus 1</input>
     <output>Fuel Boost Pump 1</output>
-    <switch>
-      <prop>/controls/boost-pump[0]</prop>
-    </switch>
+    <switch>/controls/boost-pump[0]</switch>
   </connector>
 
   <connector>
     <input>Main Bus 2</input>
     <output>Fuel Boost Pump 2</output>
-    <switch>
-      <prop>/controls/boost-pump[1]</prop>
-    </switch>
+    <switch>/controls/boost-pump[1]</switch>
   </connector>
 
   <connector>
     <input>Main Bus 1</input>
     <output>Landing Light</output>
-    <switch>
-      <prop>/controls/switches/landing-light</prop>
-    </switch>
+    <switch>/controls/switches/landing-light</switch>
   </connector>
 
   <connector>
     <input>Main Bus 1</input>
     <output>Beacon</output>
-    <switch>
-      <prop>/controls/switches/flashing-beacon</prop>
-    </switch>
+    <switch>/controls/switches/flashing-beacon</switch>
   </connector>
 
   <connector>
     <input>DC Bus 2</input>
     <output>Map Light</output>
-    <switch>
-      <prop>/controls/switches/nav-lights</prop>
-    </switch>
+    <switch>/controls/switches/nav-lights</switch>
   </connector>
 
   <connector>
     <input>DC Bus 1</input>
     <output>Instrument Lights</output>
-    <switch>
-      <prop>/controls/circuit-breakers/instrument-lights</prop>
-    </switch>
+    <switch>/controls/circuit-breakers/instrument-lights</switch>
   </connector>
 
   <connector>
     <input>Main Bus 2</input>
     <output>Strobe Light</output>
-    <switch>
-      <prop>/controls/switches/strobe-lights</prop>
-    </switch>
+    <switch>/controls/switches/strobe-lights</switch>
   </connector>
 
   <connector>
     <input>Main Bus 2</input>
     <output>Taxi Light</output>
-    <switch>
-      <prop>/controls/switches/taxi-lights</prop>
-    </switch>
+    <switch>/controls/switches/taxi-lights</switch>
   </connector>
 
   <connector>
     <input>Main Bus 1</input>
     <output>Pitot Heat</output>
-    <switch>
-      <prop>/controls/switches/pitot-heat</prop>
-    </switch>
+    <switch>/controls/switches/pitot-heat</switch>
   </connector>
 -->
 </PropertyList>
