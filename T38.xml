@@ -143,8 +143,16 @@
       OUTPUT  fcs/right-aileron-pos-rad
    </COMPONENT>
    <!-- YAW FCS *********************************************************** -->
+   <COMPONENT NAME="Rudder Limiter" TYPE="SCHEDULED_GAIN">
+      INPUT        fcs/rudder-cmd-norm
+      SCHEDULED_BY gear/gear-cmd-norm
+      ROWS         3
+       0.00        0.20
+       0.01        1.00
+       1.00        1.00
+   </COMPONENT>
    <COMPONENT NAME="Rudder Command Sum" TYPE="SUMMER">
-      INPUT       fcs/rudder-cmd-norm
+      INPUT       fcs/rudder-limiter
       INPUT       fcs/yaw-trim-cmd-norm
       CLIPTO      -1 1
    </COMPONENT>
@@ -196,8 +204,8 @@
      INPUT   fcs/flap-cmd-norm
      DETENTS 3
              0    0
-             24   5
-             40   3
+             0.5  5
+             1.0  3
      OUTPUT  fcs/flap-pos-deg
    </COMPONENT>
    <!-- GEAR TRAVEL TIME ************************************************** -->

@@ -53,6 +53,12 @@ David Culp,  davidculp2@comcast.net
 
   <chase-distance-m>-21</chase-distance-m>
 
+  <flaps>
+   <setting>0.000</setting>
+   <setting>0.500</setting> 
+   <setting>1.000</setting> 
+  </flaps>
+
   <ai>
    <scenario>refueling_demo</scenario>
   </ai>
@@ -126,7 +132,7 @@ David Culp,  davidculp2@comcast.net
 
 <instrumentation>
  <radar>
-  <range type="int" archive="y">40</range>
+  <range type="int" archive="y">20</range>
   <minimized type="bool" archive="y">false</minimized>
  </radar>
 </instrumentation>
