@@ -11,6 +11,7 @@ David Culp,  davidculp2@comcast.net
  <sim>
 
   <description>Northrop T-38</description>
+  <author>David Culp</author>
  
   <flight-model>jsb</flight-model>
   <aero>T38</aero>
