@@ -202,6 +202,14 @@ _______________________________________________________________________
    <h>140</h>
   </instrument>
 -->
+  <instrument include="../../Instruments/radar.xml">
+   <name>Radar</name>
+   <x>944</x>
+   <y>110</y>
+   <w>160</w>
+   <h>160</h>
+  </instrument>
+
  </instruments>
 
 </PropertyList>

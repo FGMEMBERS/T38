@@ -95,4 +95,10 @@ David Culp,  davidculp2@comcast.net
  </keyboard>
 </input>
 
+<instrumentation>
+ <radar>
+  <range type="int" archive="y">40</range>
+ </radar>
+</instrumentation>
+
 </PropertyList>
