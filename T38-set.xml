@@ -49,19 +49,8 @@ David Culp,  davidculp2@comcast.net
 
   <chase-distance-m>-21</chase-distance-m>
 
-  <!-- puts an A-4 north of KSFO, orbiting at 7000 ft  -->
   <ai>
-   <entry>
-    <type>aircraft</type>
-    <class>light</class>
-    <path>Aircraft/a4/Models/a4-blue.xml</path>
-    <speed-KTAS type="double">320.0</speed-KTAS>
-    <altitude-ft type="double">7000.0</altitude-ft>
-    <longitude type="double">-122.6</longitude>
-    <latitude type="double">37.9</latitude>
-    <heading type="double">210.0</heading>
-    <bank type="double">-15.0</bank>
-   </entry>
+   <scenario>refueling_demo</scenario>
   </ai>
 
   <!-- turns off GA tower communications -->
