@@ -22,7 +22,7 @@ David Culp,  davidculp2@comcast.net
   
   <systems>
    <electrical>
-    <path>Aircraft/c172/c172-electrical.xml</path>
+    <path>Aircraft/Generic/generic-electrical.xml</path>
    </electrical>
   </systems> 
   
