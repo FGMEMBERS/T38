@@ -106,7 +106,7 @@
     <name>Standby AC Bus</name>
     <prop>/systems/electrical/outputs/standby-bus-ac</prop>
     <prop>/systems/electrical/outputs/pressurization-control-ac</prop>
-    <prop>/systems/electrical/outputs/navcom[0]</prop>
+    <prop>/systems/electrical/outputs/nav[0]</prop>
     <prop>/systems/electrical/outputs/hsi</prop>
     <prop>/systems/electrical/outputs/dme[0]</prop>
     <prop>/systems/electrical/outputs/audio-panel[0]</prop>
@@ -127,7 +127,7 @@
   <bus>
     <name>Avionics Bus 2</name>
     <prop>/systems/electrical/outputs/bus-avionics[1]</prop>
-    <prop>/systems/electrical/outputs/navcom[1]</prop>
+    <prop>/systems/electrical/outputs/nav[1]</prop>
     <prop>/systems/electrical/outputs/transponder</prop>
     <prop>/systems/electrical/outputs/autopilot</prop>
   </bus>
