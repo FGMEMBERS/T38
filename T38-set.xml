@@ -22,7 +22,6 @@ David Culp,  davidculp2@comcast.net
   </systems> 
   
   <sound>
-   <audible>true</audible>
    <path>Aircraft/T38/Sounds/T38-sound.xml</path>
   </sound>
 
