@@ -54,7 +54,7 @@
    <transformations>
     <transformation>
      <type>rotation</type>
-     <property>engines/engine[0]/N2</property>
+     <property>engines/engine[0]/n2</property>
      <scale>2.65</scale>
     </transformation>
     <transformation>
@@ -86,7 +86,7 @@
     </transformation>
     <transformation>
      <type>rotation</type>
-     <property>engines/engine[0]/N2</property>
+     <property>engines/engine[0]/n2</property>
      <offset>0</offset>
      <scale>360</scale>
     </transformation>

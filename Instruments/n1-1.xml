@@ -31,7 +31,7 @@
    <transformations>
     <transformation>
      <type>rotation</type>
-     <property>engines/engine[1]/N2</property>
+     <property>engines/engine[1]/n2</property>
      <scale>2.65</scale>
     </transformation>
     <transformation>
@@ -63,7 +63,7 @@
     </transformation>
     <transformation>
      <type>rotation</type>
-     <property>engines/engine[1]/N2</property>
+     <property>engines/engine[1]/n2</property>
      <scale>360</scale>
     </transformation>
     <transformation>

@@ -31,8 +31,9 @@
    <transformations>
     <transformation>
      <type>rotation</type>
-     <property>engines/engine[0]/EGT_degC</property>
-     <scale>0.27</scale>
+     <property>engines/engine[0]/egt_degf</property>
+     <offset>-17.77777777</offset>
+     <scale>0.15</scale>
     </transformation>
     <transformation>
      <type>y-shift</type>
