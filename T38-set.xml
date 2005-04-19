@@ -74,6 +74,13 @@ David Culp,  davidculp2@comcast.net
    <enabled type="bool">false</enabled>
   </ai-traffic>
 
+  <help>
+   <key>
+    <name>Shift-Q</name>
+    <desc>fuel cutoff switch or lever</desc>
+   </key>
+  </help>
+
  </sim>
 
  <consumables>
