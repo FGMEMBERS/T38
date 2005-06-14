@@ -20,12 +20,6 @@ David Culp,  davidculp2@comcast.net
    <splash-texture>Aircraft/T38/T38-splash.rgb</splash-texture>
   </startup>
   
-  <systems>
-   <electrical>
-    <path>Aircraft/Generic/generic-electrical.xml</path>
-   </electrical>
-  </systems> 
-  
   <sound>
    <path>Aircraft/T38/Sounds/T38-sound.xml</path>
   </sound>
