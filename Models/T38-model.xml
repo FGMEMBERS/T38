@@ -3,6 +3,20 @@
 <PropertyList>
  <path>T38.ac</path>
 
+ <!-- no shadows -->
+ <animation>
+  <type>noshadow</type>
+  <object-name>markings</object-name>
+  <object-name>left_flame</object-name>
+  <object-name>left_internal_flame</object-name>
+  <object-name>right_flame</object-name>
+  <object-name>right_internal_flame</object-name>
+  <object-name>red_light</object-name>
+  <object-name>green_light</object-name>
+  <object-name>lhcondensation cone</object-name>
+  <object-name>rhcondensation cone</object-name>
+ </animation>
+
  <animation>
   <type>select</type>
   <object-name>left_flame</object-name>
