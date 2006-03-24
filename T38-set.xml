@@ -12,6 +12,7 @@ David Culp,  davidculp2@comcast.net
 
   <description>Northrop T-38</description>
   <author>David Culp (FDM), Erik Hofman/Innis Cunningham/Capt. Slug (3D)</author>
+  <status>early production</status>
  
   <flight-model>jsb</flight-model>
   <aero>T38</aero>
