@@ -140,4 +140,10 @@ David Culp,  davidculp2@comcast.net
  </radar>
 </instrumentation>
 
+<nasal>
+	<aar> 
+			<file>Aircraft/T38/aar.nas</file>
+	</aar>
+</nasal>
+
 </PropertyList>
