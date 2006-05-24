@@ -31,10 +31,10 @@ initialized = 0;
 enabled = 0;
 
 print ("running aar");
-print (" enabled " , enabled,  " initialized ", initialized);  
+# print (" enabled " , enabled,  " initialized ", initialized);  
 
 updateTanker = func {
-print ("tanker update running ");
+# print ("tanker update running ");
 				#if (!initialized ) {
 				#print("calling initialize");
 				#initialize();}
@@ -59,7 +59,7 @@ print ("tanker update running ");
                 id = id_node.getValue();
                 tanker = tanker_node.getValue();
                 
-				print ("contact ", contact , " tanker " , tanker );
+#				print ("contact ", contact , " tanker " , tanker );
                             
                 if (tanker and contact) {
                     append(selectedTankers, a);
@@ -83,7 +83,7 @@ print ("tanker update running ");
             }
         }
          
-		print ("tankers ", size(selectedTankers) );
+#		print ("tankers ", size(selectedTankers) );
 
         if ( size(selectedTankers) >= 1 ){
             Refueling.setBoolValue(1);
