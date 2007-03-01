@@ -231,7 +231,7 @@ properties' values.
     <chunks>
      <chunk>
       <type>number-value</type>
-      <property>/instrumentation/dme/distance-nm[0]</property>
+      <property>/instrumentation/dme/indicated-distance-nm[0]</property>
       <format>%4.1f</format>
      </chunk>
     </chunks>
