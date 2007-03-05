@@ -55,7 +55,7 @@
             <z> 36 </z>
         </location>
         <location name="VRP" unit="IN">
-            <x> 0 </x>
+            <x> 320 </x>
             <y> 0 </y>
             <z> 0 </z>
         </location>
@@ -76,9 +76,9 @@
     <ground_reactions>
         <contact type="BOGEY" name="NOSE_LG">
             <location unit="IN">
-                <x> 140 </x>
+                <x> 73 </x>
                 <y> 0 </y>
-                <z> -60 </z>
+                <z> -46 </z>
             </location>
             <static_friction>  0.8 </static_friction>
             <dynamic_friction> 0.5 </dynamic_friction>
@@ -93,7 +93,7 @@
             <location unit="IN">
                 <x> 335 </x>
                 <y> -65 </y>
-                <z> -60 </z>
+                <z> -46 </z>
             </location>
             <static_friction> 0.8 </static_friction>
             <dynamic_friction> 0.5 </dynamic_friction>
@@ -108,7 +108,7 @@
             <location unit="IN">
                 <x> 335 </x>
                 <y> 65 </y>
-                <z> -60 </z>
+                <z> -46 </z>
             </location>
             <static_friction> 0.8 </static_friction>
             <dynamic_friction> 0.5 </dynamic_friction>

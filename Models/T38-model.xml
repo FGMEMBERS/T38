@@ -49,6 +49,26 @@
   </condition>
  </animation>
 
+ <!-- oleo hack -->
+ <animation>
+  <condition>
+   <equals>
+    <property>gear/gear[0]/position-norm</property>
+    <value>1</value>
+   </equals>
+  </condition>
+  <type>translate</type>
+  <object-name>nose_wheel</object-name>
+  <object-name>front_lower_strut</object-name>
+  <property>gear/gear[0]/compression-norm</property>
+  <factor>0.3048</factor> <!-- feet to meters -->
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+ 
  <animation>
   <type>rotate</type>
   <object-name>nose_wheel</object-name>
@@ -74,8 +94,10 @@
   <object-name>front_upper_strut</object-name>
   <object-name>front_fwd_strut</object-name>
   <property>gear/gear[0]/position-norm</property>
-  <factor>-90</factor>
-  <offset-deg>90</offset-deg>   
+  <factor>-130</factor>
+  <offset-deg>130</offset-deg>
+  <min-deg>0</min-deg>
+  <max-deg>90</max-deg>
   <center>
    <x-m>-6.26</x-m>
    <y-m>0</y-m>
@@ -201,6 +223,27 @@
   </axis>
  </animation>
 
+ <!-- oleo hack -->
+ <animation>
+  <condition>
+   <equals>
+    <property>gear/gear[1]/position-norm</property>
+    <value>1</value>
+   </equals>
+  </condition>
+  <type>translate</type>
+  <object-name>leftgear</object-name>
+  <object-name>left_lower_strut</object-name>
+  <object-name>left_inner_strut</object-name>
+  <property>gear/gear[1]/compression-norm</property>
+  <factor>0.3048</factor> <!-- feet to meters -->
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
  <animation>
   <type>rotate</type>
   <object-name>leftgeardoor</object-name>
@@ -282,7 +325,7 @@
  <animation>
   <type>rotate</type>
   <object-name>right_inner_strut</object-name>
-  <property>gear/gear[1]/position-norm</property>
+  <property>gear/gear[2]/position-norm</property>
   <factor>-195</factor>
   <offset-deg>135</offset-deg>
   <min-deg>0</min-deg>
@@ -299,6 +342,27 @@
   </axis>
  </animation>
 
+ <!-- oleo hack -->
+ <animation>
+  <condition>
+   <equals>
+    <property>gear/gear[2]/position-norm</property>
+    <value>1</value>
+   </equals>
+  </condition>
+  <type>translate</type>
+  <object-name>rightgear</object-name>
+  <object-name>right_lower_strut</object-name>
+  <object-name>right_inner_strut</object-name>
+  <property>gear/gear[2]/compression-norm</property>
+  <factor>0.3048</factor> <!-- feet to meters -->
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+ 
  <animation>
   <type>rotate</type>
   <object-name>rightgeardoor</object-name>
