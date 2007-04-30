@@ -135,7 +135,7 @@ properties' values.
     <chunks>
      <chunk>
       <type>number-value</type>
-      <property>/fdm/jsbsim/velocities/mach-norm[0]</property>
+      <property>/velocities/mach</property>
       <min>0.40</min>
       <format>%3.2f</format>
      </chunk>
