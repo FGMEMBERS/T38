@@ -31,7 +31,7 @@
    <transformations>
     <transformation>
      <type>rotation</type>
-     <property>consumables/fuel/tank[1]/level-lb</property>
+     <property>consumables/fuel/tank[1]/level-lbs</property>
       <min>0</min>
       <max>2100</max>
       <scale>0.144</scale>
