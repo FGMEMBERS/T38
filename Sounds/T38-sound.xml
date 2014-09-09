@@ -1,0 +1,146 @@
+<?xml version="1.0"?>
+ 
+<PropertyList>
+
+ <fx>
+
+  <engine>
+   <name>engine</name>
+   <mode>looped</mode>
+   <path>Aircraft/T38/Sounds/T38-engines.wav</path>
+   <condition>
+    <property>/engines/engine/run[0]</property>
+   </condition>
+   <volume>
+    <property>/controls/throttle[0]</property>
+    <factor>1</factor>
+    <min>0.5</min>
+    <max>1.0</max>
+   </volume>
+  </engine>
+
+  <tire-rumble>
+   <name>tire-rumble</name>
+   <mode>looped</mode>
+   <path>Sounds/rumble.wav</path>
+   <condition>
+    <or>
+     <property>/gear/gear[0]/wow</property>
+     <property>/gear/gear[1]/wow</property>
+     <property>/gear/gear[2]/wow</property>
+    </or>
+   </condition>
+   <volume>
+    <property>/velocities/airspeed-kt</property>
+    <factor>0.004</factor>
+    <max>0.3</max>
+   </volume>
+  </tire-rumble>
+
+  <gear-wind>
+   <name>gear-wind</name>
+   <mode>looped</mode>
+   <path>Sounds/rumble.wav</path>
+   <condition>
+     <greater-than>
+      <property>/gear/gear[1]/position-norm[0]</property>
+      <value>0.01</value>
+     </greater-than>
+   </condition>
+   <volume>
+    <property>/velocities/airspeed-kt</property>
+    <factor>0.004</factor>
+    <max>1.0</max>
+   </volume>
+  </gear-wind>
+
+  <gear-lock>
+   <name>gear-lock</name>
+   <path>Sounds/gear-lck.wav</path>
+   <condition>
+    <equals>
+     <property>/gear/gear[0]/position-norm</property>
+     <value>0</value>
+    </equals>
+   </condition>
+  </gear-lock>
+
+  <squeal>
+   <name>squeal</name>
+   <path>Sounds/squeal.wav</path>
+   <condition>
+    <or>
+     <property>/gear/gear[0]/wow</property>
+     <property>/gear/gear[1]/wow</property>
+     <property>/gear/gear[2]/wow</property>
+    </or>
+   </condition>
+   <volume>
+    <property>/velocities/speed-down-fps</property>
+    <factor>0.05</factor>
+   </volume>
+   <volume>
+    <property>/velocities/airspeed-kt</property>
+    <factor>0.01</factor>
+   </volume>
+   <volume>
+    <internal>dt_stop</internal>
+    <factor>0.05</factor>
+    <max>1.0</max>
+   </volume>
+   <pitch>
+    <property>/velocities/airspeed-kt</property>
+    <factor>0.0025</factor>
+    <offset>1.2</offset>
+   </pitch>
+  </squeal>
+
+  <wind>
+   <name>wind</name>
+   <mode>looped</mode>
+   <path>Sounds/wind.wav</path>
+   <property>/velocities/airspeed-kt</property>
+   <volume>
+    <property>/position/altitude-ft</property>
+    <factor>-0.000015</factor>
+    <offset>1.0</offset>
+    <min>0.1</min>
+    <max>1.0</max>
+   </volume>
+   <volume>
+     <property>/velocities/airspeed-kt</property>
+     <factor>0.0015</factor>
+     <min>0.03</min>
+     <max>0.25</max>
+   </volume>
+   <pitch>
+    <property>/velocities/airspeed-kt</property>
+    <factor>0.01</factor>
+    <offset>1.25</offset>
+   </pitch>
+  </wind>
+
+  <buffet>
+   <name>alpha-buffet</name>
+   <mode>looped</mode>
+   <condition>
+    <greater-than>
+     <property>/fdm/jsbsim/aero/alpha-rad[0]</property>
+     <value>0.1</value>
+    </greater-than>
+   </condition>
+   <path>Sounds/rumble.wav</path>
+   <volume>
+    <property>/fdm/jsbsim/aero/alpha-rad[0]</property>
+    <factor>15.0</factor>
+    <max>1.0</max>
+   </volume>
+   <pitch>
+    <property>/fdm/jsbsim/aero/alpha-rad[0]</property>
+    <factor>0.1</factor>
+   </pitch>
+  </buffet>
+
+</fx>
+ 
+</PropertyList>
