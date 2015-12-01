@@ -18,7 +18,8 @@ David Culp,  davidculp2@comcast.net
   <aero>T38</aero>
 
   <startup>
-   <splash-texture>Aircraft/T38/Splash/splash1.png</splash-texture>
+   <splash-texture>Splash/T38-splash.png</splash-texture>
+   <splash-texture>Splash/splash1.png</splash-texture>
   </startup>
   
   <sound>
