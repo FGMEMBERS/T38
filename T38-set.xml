@@ -11,6 +11,9 @@ David Culp,  davidculp2@comcast.net
  <sim>
 
   <description>Northrop T-38</description>
+  <long-description>
+   The Northrop T-38 Talon is a two-seat, twin-engined supersonic jet trainer. It was the world's first supersonic trainer and is also the most produced. The T-38 remains in service as of 2017 in several air forces.
+  </long-description>
   <author>David Culp (FDM), Erik Hofman/Innis Cunningham/Capt. Slug (3D)</author>
   <status>early production</status>
 
@@ -23,6 +26,21 @@ David Culp,  davidculp2@comcast.net
  
   <flight-model>jsb</flight-model>
   <aero>T38</aero>
+  <tags>
+      <tag>northrop</tag>
+      <tag>low-wing</tag>
+      <tag>tricycle</tag>
+      <tag>retractable-gear</tag>
+      <tag>twin-engine</tag>
+      <tag>jet</tag>
+      <tag>afterburner</tag>
+      <tag>trainer</tag>
+      <tag>1960s</tag>
+      <tag>1970s</tag>
+      <tag>1980s</tag>
+      <tag>1990s</tag>
+      <tag>2000s</tag>
+    </tags>
 
   <startup>
    <splash-texture>Splash/T38-splash.png</splash-texture>
